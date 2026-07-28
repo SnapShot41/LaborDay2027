@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrating 80 Years - Thomas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Celebrating 80 Years</h1>
+            <h2>THOMAS</h2>
+            <p>September 7, 2026</p>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+<nav class="main-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hotel.html">Hotel Rooms</a></li>
+        <li><a href="tshirts.html">T‑Shirt Request</a></li>
+        <li><a href="allergies.html">Allergies</a></li>
+        <li><a href="foodsignup.html">Food Sign Up</a></li>
+        <li><a href="guestbook.html">Guest Book</a></li>
+    </ul>
+</nav>
+
+    <!-- CONTENT SECTIONS -->
+    <section class="intro">
+    <h3>Uniform of the Day</h3>
+    <p>All personnel are requested to secure their reunion T‑shirt. No excuses, no AWOL wardrobes. Let’s look sharp out there.</p>
+</section>
+
+<section class="mockup">
+    <h3>Burleigh Brigade Shirt Mock‑Up</h3>
+    <img src="tshirtmockup1.png" alt="description">
+</section>
+
+    <h2>T‑Shirt Size & Color Selection</h2>
+
+    <!-- PERSON 1 -->
+    <div class="shirt-entry">
+        <label>
+            Recruits Name:
+            <input type="text" name="guest-name[]" placeholder="Enter name">
+        </label>
+
+        <label>
+            Shirt Size:
+            <select name="shirt-size[]">
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+        </label>
+
+        <label>
+            Shirt Color:
+            <select name="shirt-color[]">
+                <option value="Red">Red</option>
+                <option value="White">White</option>
+                <option value="Blue">Blue</option>
+            </select>
+        </label>
+    </div>
+
+    <br><br>
+
+    <!-- PERSON 2 -->
+    <div class="shirt-entry">
+        <label>
+            Recruits Name:
+            <input type="text" name="guest-name[]" placeholder="Enter name">
+        </label>
+
+        <label>
+            Shirt Size:
+            <select name="shirt-size[]">
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+        </label>
+
+        <label>
+            Shirt Color:
+            <select name="shirt-color[]">
+                <option value="Red">Red</option>
+                <option value="White">White</option>
+                <option value="Blue">Blue</option>
+            </select>
+        </label>
+    </div>
+
+    <form action="https://formspree.io/f/mwvgaojp" method="POST">
+  <label>Recruits Name</label>
+  <input type="text" name="name" required>
+
+  <label>T‑Shirt Size / Color / Quantity</label>
+  <textarea name="tshirt" required></textarea>
+
+  <button type="submit">Submit T‑Shirt Order</button>
+</form>
+
+   <div class="spacer"></div>
+
+    <!-- Add more entries by copying the block above -->
+
+</form>
+
+</body>
+</html>

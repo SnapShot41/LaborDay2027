@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrating 80 Years - Thomas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>A party isn’t a party without food</h1>
+            <h2>Let us know what you will be bringing</h2>
+            <p>Party time September 5, 2027</p>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hotel.html">Hotel Rooms</a></li>
+            <li><a href="tshirts.html">T‑Shirt Request</a></li>
+            <li><a href="allergies.html">Allergies</a></li>
+            <li><a href="foodsignup.html">Food Sign Up</a></li>
+            <li><a href="guestbook.html">Guest Book</a></li>
+        </ul>
+    </nav>
+
+    <!-- INTRO -->
+    <section class="intro">
+        <h3>For My Foodies</h3>
+        <p>Thomas wants a Southern BBQ for his birthday celebration.</p>
+        <p>We are asking guests to sign up to bring a dish. Please use the form below to let us know what you will be bringing.</p>
+    </section>
+
+    <!-- FOOD SIGN-UP FORM -->
+    <h2>Food Sign‑Up</h2>
+
+    <form action="https://formspree.io/f/mbdnqobg" method="POST" class="food-form">
+        <label>
+            Guest Name:
+            <input type="text" name="guest-name" placeholder="Enter your name" required>
+        </label>
+
+        <label>
+            Dish You Will Bring:
+            <input type="text" name="dish-name" placeholder="Enter your dish" required>
+        </label>
+
+        <button type="submit" class="food-submit">Add to List</button>
+    </form>
+
+    <!-- ALLERGY SECTION -->
+    <section class="allergy-warning">
+        <h3>Allergy & Dietary Notes</h3>
+        <p>Please list any allergies or dietary restrictions we should be aware of. This helps us keep everyone safe and happy during the celebration.</p>
+    </section>
+
+    <!-- ALLERGY FORM -->
+    <form action="https://formspree.io/f/mbdnqobg" method="POST" class="food-form">
+        <label>
+            Guest Name:
+            <input type="text" name="allergy-guest" placeholder="Enter your name" required>
+        </label>
+
+        <label>
+            Allergy / Restriction:
+            <input type="text" name="allergy-item" placeholder="Enter your allergy or restriction" required>
+        </label>
+
+        <label>
+            Reaction (rash, hives, anaphylaxis, etc.):
+            <input type="text" name="allergy-reaction" placeholder="Describe your reaction" required>
+        </label>
+
+        <button type="submit" class="food-submit">Add to List</button>
+    </form>
+
+    <!-- FOOD ALREADY CLAIMED -->
+    <h3>Food Already Claimed</h3>
+
+    <ul class="food-list">
+        <li>Thomas — Smoked pork</li>
+        <li>Heather — Burgers and dogs</li>
+        <li>Guest Name — Mac & Cheese</li>
+        <li>Guest Name — Fruit Tray</li>
+    </ul>
+
+    <h4>The menu will be updated manually, so please don’t submit duplicates.</h4>
+
+</body>
+</html>

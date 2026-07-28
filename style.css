@@ -1,0 +1,516 @@
+/* Patriotic Section Container */
+.tally-section {
+    background: linear-gradient(135deg, #002868 0%, #ffffff 50%, #bf0a30 100%);
+    padding: 25px;
+    border-radius: 14px;
+    margin: 30px 0;
+    position: relative;
+    color: #000;
+    box-shadow: 0 0 18px rgba(0,0,0,0.25);
+    overflow: hidden;
+}
+
+/* Ribbon Header */
+.tally-section::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    background: repeating-linear-gradient(
+        90deg,
+        #bf0a30,
+        #bf0a30 12px,
+        #ffffff 12px,
+        #ffffff 24px,
+        #002868 24px,
+        #002868 36px
+    );
+    border-radius: 12px 12px 0 0;
+}
+
+/* Fireworks Burst */
+.tally-section::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    bottom: -40px;
+    right: -40px;
+    background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 70%);
+    mask-image: url('firework-burst.png'); /* optional if you add a burst image */
+    opacity: 0.45;
+    pointer-events: none;
+}
+
+/* Section Title */
+.tally-section h2 {
+    font-family: 'Arial Black', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #002868;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+/* List Styling */
+.tally-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.tally-section li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+/* PAGE BACKGROUND */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #00163a; /* deep Air Force blue */
+    color: white;
+}
+
+/* HERO SECTION */
+.hero {
+    background: radial-gradient(circle at center, #003b8b 0%, #00163a 70%);
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* FIREWORK GLOW */
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 70%);
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+.hero::before {
+    top: -40px;
+    left: -40px;
+}
+
+.hero::after {
+    bottom: -40px;
+    right: -40px;
+}
+
+/* HERO TEXT */
+.hero-content h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.hero-content h2 {
+    font-size: 4rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* RIBBON EFFECT */
+.hero {
+    border-bottom: 12px solid transparent;
+    border-image: repeating-linear-gradient(
+        90deg,
+        #bf0a30,
+        #bf0a30 20px,
+        #ffffff 20px,
+        #ffffff 40px,
+        #002868 40px,
+        #002868 60px
+    ) 12;
+}
+
+/* NAVIGATION */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(0,0,0,0.4);
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    color: #ffdf80; /* soft gold highlight */
+}
+
+/* INTRO SECTION */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 1.3rem;
+}
+
+/* Center the button */
+.hotel-submit {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 14px 40px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    /* Red, White, Air Force Blue Ribbon Gradient */
+    background: linear-gradient(
+        90deg,
+        #bf0a30 0%,      /* red */
+        #ffffff 33%,     /* white */
+        #002868 66%      /* Air Force blue */
+    );
+
+    color: #00163a; /* deep blue text for contrast */
+    box-shadow: 0 0 12px rgba(0,0,0,0.4), 
+                inset 0 0 6px rgba(255,255,255,0.6);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.hotel-submit:hover {
+    box-shadow: 0 0 18px rgba(255,255,255,0.8),
+                inset 0 0 10px rgba(255,255,255,0.9);
+    transform: scale(1.05);
+}
+
+/* FOOD SECTION CONTAINER */
+.food-section {
+    background: linear-gradient(135deg, #002868 0%, #00163a 60%);
+    padding: 40px;
+    border-radius: 18px;
+    margin: 40px auto;
+    max-width: 700px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* RIBBON HEADER */
+.food-section::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    background: repeating-linear-gradient(
+        90deg,
+        #bf0a30,
+        #bf0a30 20px,
+        #ffffff 20px,
+        #ffffff 40px,
+        #002868 40px,
+        #002868 60px
+    );
+    border-radius: 12px 12px 0 0;
+}
+
+/* FIREWORK GLOW */
+.food-section::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    bottom: -40px;
+    right: -40px;
+    background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 70%);
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+/* SECTION TITLE */
+.food-section h2 {
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
+}
+
+/* FORM STYLING */
+.food-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.food-form label {
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    color: #e6e6e6;
+}
+
+/* INPUT FIELDS */
+.food-form input {
+    margin-top: 8px;
+    padding: 12px 14px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 1px solid #b8b8b8;
+    background: rgba(255,255,255,0.85);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
+}
+
+/* SUBMIT BUTTON */
+.food-submit {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 14px 40px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    /* Ribbon Gradient */
+    background: linear-gradient(
+        90deg,
+        #bf0a30 0%,
+        #ffffff 33%,
+        #002868 66%
+    );
+
+    color: #00163a;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4),
+                inset 0 0 6px rgba(255,255,255,0.6);
+    transition: all 0.3s ease;
+}
+
+.food-submit:hover {
+    box-shadow: 0 0 18px rgba(255,255,255,0.8),
+                inset 0 0 10px rgba(255,255,255,0.9);
+    transform: scale(1.05);
+}
+
+/* FOOD LIST */
+.food-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.food-list li {
+    background: rgba(255,255,255,0.1);
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+
+.book {
+    width: 600px;
+    height: 400px;
+    margin: 40px auto;
+    perspective: 1500px;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transform-origin: left center;
+    transition: transform 1.2s ease;
+}
+
+.book-container {
+    width: 600px;
+    margin: 40px auto;
+    perspective: 2000px;
+}
+
+.book {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: left center;
+    transition: transform 1s ease;
+}
+
+.page h2 {
+    margin-top: 0;
+}
+
+.guestbook-form {
+    width: 600px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.guestbook-form input,
+.guestbook-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.guestbook-form button {
+    padding: 12px;
+    background: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.mockup img {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/* MOBILE LAYOUT */
+@media (max-width: 600px) {
+
+    /* Base text + spacing */
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* Navigation stacks */
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .main-nav a {
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+        display: block;
+    }
+
+    /* Images scale */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Form fields stretch */
+    .shirt-entry label,
+    .food-form label,
+    .guestbook-form label {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* Hero text centers */
+    .hero-content h1,
+    .hero-content h2,
+    .hero-content p {
+        text-align: center;
+    }
+
+    /* Fix wide containers */
+    .food-section,
+    .guestbook-form,
+    .book,
+    .book-container,
+    .page {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 20px auto;
+        height: auto;
+        padding: 20px;
+    }
+
+    /* Guestbook page layout */
+    .page {
+        position: relative;
+        transform: none !important;
+        box-shadow: none;
+    }
+}
+
+.spacer {
+    height: 20px;
+}
+
+@media (max-width: 600px) {
+    .spacer {
+        height: 10px;
+    }
+}
+
+.countdown-box {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 400px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+#timer {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffdf80; /* soft gold highlight */
+}
+

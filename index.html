@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrating 80 Years - Thomas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Celebrating 80 Years</h1>
+            <h2>THOMAS</h2>
+            <p>September 5, 2027</p>
+        </div>
+    </header>
+
+    <div id="countdown" class="countdown-box">
+    <h3>Countdown to the Celebration</h3>
+    <div id="timer"></div>
+</div>
+
+    <!-- NAVIGATION -->
+<nav class="main-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hotel.html">Hotel Rooms</a></li>
+        <li><a href="tshirts.html">T‑Shirt Request</a></li>
+        <li><a href="allergies.html">Allergies</a></li>
+        <li><a href="foodsignup.html">Food Sign Up</a></li>
+        <li><a href="guestbook.html">Guest Book</a></li>
+    </ul>
+</nav>
+
+    <!-- CONTENT SECTIONS -->
+    <section class="intro">
+        <h3>Welcome to the Celebration</h3>
+        <p>This site helps organize everything for Thomas’s 80th birthday celebration.</p>
+    </section>
+
+</body>
+</html>
+
+<script>
+    const targetDate = new Date("September 5, 2027 15:00:00").getTime();
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance < 0) {
+            document.getElementById("timer").innerHTML = "It's Party Time!";
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("timer").innerHTML =
+            `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    setInterval(updateCountdown, 1000);
+</script>

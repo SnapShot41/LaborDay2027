@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrating 80 Years - Thomas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>We are family not roommates</h1>
+            <h2>be sure to grab your own room</h2>
+            <p>for the weekend fastivities</p>
+        </div>
+    </header>
+    
+    <!-- NAVIGATION -->
+<nav class="main-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hotel.html">Hotel Rooms</a></li>
+        <li><a href="tshirts.html">T‑Shirt Request</a></li>
+        <li><a href="allergies.html">Allergies</a></li>
+        <li><a href="foodsignup.html">Food Sign Up</a></li>
+        <li><a href="guestbook.html">Guest Book</a></li>
+    </ul>
+</nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Put your information here</h1>
+            <h2>if you would like to use one</h2>
+            <p>of the rooms we have available</p>
+        </div>
+    </header>
+
+<div class="hotel-section">
+    <h2 class="hotel-title">Hotel Room Request</h2>
+
+    <form action="https://formspree.io/f/mgogrkqj" method="POST" class="hotel-form">
+
+        <label class="hotel-label">
+            Guest Name:
+            <input type="text" name="guest-name" placeholder="Enter your name" class="hotel-input" required>
+        </label>
+
+        <label class="hotel-label">
+            Rooms Needed:
+            <select name="rooms-needed" class="hotel-select" required>
+                <option value="0">0 Rooms</option>
+                <option value="1">1 Room</option>
+                <option value="2">2 Rooms</option>
+                <option value="3">3 Rooms</option>
+                <option value="4">4 Rooms</option>
+            </select>
+        </label>
+
+        <label class="hotel-label">
+            Number of Adults:
+            <select name="adult-count" class="hotel-select" required>
+                <option value="0">0 Adults</option>
+                <option value="1">1 Adult</option>
+                <option value="2">2 Adults</option>
+                <option value="3">3 Adults</option>
+                <option value="4">4 Adults</option>
+            </select>
+        </label>
+
+        <label class="hotel-label">
+            Number of Children:
+            <select name="child-count" class="hotel-select" required>
+                <option value="0">0 Children</option>
+                <option value="1">1 Child</option>
+                <option value="2">2 Children</option>
+                <option value="3">3 Children</option>
+                <option value="4">4 Children</option>
+            </select>
+        </label>
+
+        <button type="submit" class="hotel-submit">Submit Request</button>
+
+    </form>
+</div>    
+    
+</body>
+</html>
